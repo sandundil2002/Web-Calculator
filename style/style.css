@@ -55,3 +55,32 @@
     height: 12%;
     margin: 3% 3%;
 }
+
+.numbers{
+    width: 20%;
+    height: 5em
+}
+
+#plus-mark{
+    width: 20%;
+    height: 10em;
+    margin-top: 1%;
+}
+
+#row-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 3%;
+}
+
+.rows{
+    display: flex;
+    margin-left: 3%;
+    margin-right: 3%;
+    gap: 6.7%;
+}
+
+.bottom{
+    margin-top: -16.5%;
+}
+
