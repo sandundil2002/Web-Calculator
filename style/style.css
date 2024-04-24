@@ -1,62 +1,57 @@
-/*** The new CSS Reset - version 1.2.0 (last updated 23.7.2021) ***/
+/*------------------------------------------Responsive-media-queries--------------------------------------------*/
 
-/* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
-*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
-    all: unset;
-    display: revert;
+@media (max-width: 575px) {
+    .background-container {
+        margin: 10% 12%;
+        width: 300px;
+        height: 580px;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
 }
 
-/* Preferred box-sizing value */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
+@media (min-width: 576px) and (max-width: 767px) {
+    .background-container {
+        margin: 10% 19%;
+        width: 420px;
+        height: 580px;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
 }
 
-/*
-  Remove list styles (bullets/numbers)
-  in case you use it with normalize.css
-*/
-ol,
-ul {
-    list-style: none;
+@media (min-width: 768px) and (max-width: 991px) {
+    .background-container {
+        margin: 8% 23%;
+        width: 480px;
+        height: 580px;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
 }
 
-/* For images to not be able to exceed their container */
-img {
-    max-width: 100%;
+@media (min-width: 992px) and (max-width: 1199px) {
+    .background-container {
+        margin: 6% 28%;
+        width: 500px;
+        height: 580px;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
 }
 
-/* Removes spacing between cells in tables */
-table {
-    border-collapse: collapse;
+@media (min-width: 1200px) {
+    .background-container {
+        margin: 3% 33%;
+        width: 550px;
+        height: 618px;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
 }
 
-/* Revert the 'white-space' property for textarea elements on Safari */
-textarea {
-    white-space: revert;
+#display {
+    width: 93%;
+    height: 12%;
+    margin: 3% 3%;
 }
-
-.clearfix:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
-}
-
-.clearfix {
-    display: inline-block;
-}
-
-/* start commented backslash hack \*/
-* html .clearfix {
-    height: 1%;
-}
-
-.clearfix {
-    display: block;
-}
-
-/* close commented backslash hack */
