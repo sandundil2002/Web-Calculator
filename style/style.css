@@ -8,6 +8,18 @@
         border: 2px solid black;
         border-radius: 10px;
     }
+
+    .numbers {
+        height: 2.7em;
+    }
+
+    #plus-mark {
+        height: 10em;
+    }
+
+    .bottom {
+        margin-top: -31%;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -17,6 +29,18 @@
         height: 580px;
         border: 2px solid black;
         border-radius: 10px;
+    }
+
+    .numbers {
+        height: 2.8em;
+    }
+
+    #plus-mark {
+        height: 8.3em;
+    }
+
+    .bottom {
+        margin-top: -16%;
     }
 }
 
@@ -28,6 +52,18 @@
         border: 2px solid black;
         border-radius: 10px;
     }
+
+    .numbers {
+        height: 2.7em;
+    }
+
+    #plus-mark {
+        height: 9em;
+    }
+
+    .bottom {
+        margin-top: -16.5%;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -38,49 +74,78 @@
         border: 2px solid black;
         border-radius: 10px;
     }
+
+    .numbers {
+        height: 2.8em;
+    }
+
+    #plus-mark {
+        height: 9em;
+    }
+
+    .bottom {
+        margin-top: -16%;
+    }
 }
 
 @media (min-width: 1200px) {
     .background-container {
-        margin: 3% 33%;
+        margin: 2.5% 33%;
         width: 550px;
-        height: 618px;
+        height: 630px;
         border: 2px solid black;
         border-radius: 10px;
     }
+
+    .numbers {
+        height: 3em;
+    }
+
+    #plus-mark {
+        height: 10em;
+    }
+
+    .bottom {
+        margin-top: -16.5%;
+    }
+}
+
+body {
+    background-color: cadetblue;
 }
 
 #display {
     width: 93%;
     height: 12%;
     margin: 3% 3%;
+    background-color: rgb(190, 182, 182);
 }
 
-.numbers{
+.numbers {
     width: 20%;
-    height: 5em
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: x-large;
+    background-color: rgb(114, 117, 124);
 }
 
-#plus-mark{
+#plus-mark {
     width: 20%;
-    height: 10em;
     margin-top: 1%;
+    border-radius: 5px;
+    background-color: rgb(114, 117, 124);
 }
 
-#row-container{
+#row-container {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 3%;
 }
 
-.rows{
+.rows {
     display: flex;
     margin-left: 3%;
     margin-right: 3%;
     gap: 6.7%;
 }
-
-.bottom{
-    margin-top: -16.5%;
-}
-
