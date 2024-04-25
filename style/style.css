@@ -10,15 +10,19 @@
     }
 
     .numbers {
-        height: 2.7em;
+        height: 2.3em;
     }
 
     #plus-mark {
-        height: 10em;
+        height: 9em;
     }
 
-    .bottom {
-        margin-top: -31%;
+    .bottom-2 {
+        margin-top: -30%;
+    }
+
+    .bottom-1 {
+        margin-top: -5%;
     }
 }
 
@@ -32,15 +36,19 @@
     }
 
     .numbers {
-        height: 2.8em;
+        height: 2.3em;
     }
 
     #plus-mark {
-        height: 8.3em;
+        height: 9em;
     }
 
-    .bottom {
-        margin-top: -16%;
+    .bottom-2 {
+        margin-top: -22%;
+    }
+
+    .bottom-1 {
+        margin-top: -5%;
     }
 }
 
@@ -54,15 +62,19 @@
     }
 
     .numbers {
-        height: 2.7em;
+        height: 2.3em;
     }
 
     #plus-mark {
         height: 9em;
     }
 
-    .bottom {
-        margin-top: -16.5%;
+    .bottom-2 {
+        margin-top: -19%;
+    }
+
+    .bottom-1 {
+        margin-top: -5%;
     }
 }
 
@@ -76,21 +88,25 @@
     }
 
     .numbers {
-        height: 2.8em;
+        height: 2.3em;
     }
 
     #plus-mark {
         height: 9em;
     }
 
-    .bottom {
-        margin-top: -16%;
+    .bottom-2 {
+        margin-top: -19%;
+    }
+
+    .bottom-1 {
+        margin-top: -5%;
     }
 }
 
 @media (min-width: 1200px) {
     .background-container {
-        margin: 2.5% 33%;
+        margin: 2.5% 30%;
         width: 550px;
         height: 630px;
         border: 2px solid black;
@@ -98,49 +114,70 @@
     }
 
     .numbers {
-        height: 3em;
+        height: 2.5em;
     }
 
     #plus-mark {
         height: 10em;
     }
 
-    .bottom {
-        margin-top: -16.5%;
+    .bottom-2 {
+        margin-top: -18%;
+    }
+
+    .bottom-1 {
+        margin-top: -4%;
     }
 }
 
 body {
+    padding-left: 5%;
+    padding-right: 5%;
     background-color: cadetblue;
+    background-image: url("/assets/background-table.png");
+    background-repeat: no-repeat;
 }
 
 #display {
     width: 93%;
-    height: 12%;
+    height: 16%;
     margin: 3% 3%;
-    background-color: rgb(190, 182, 182);
+    background-color: #e0e7ff;
+    border: none;
 }
 
 .numbers {
     width: 20%;
-    border-radius: 5px;
+    border-radius: 7px;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: x-large;
-    background-color: rgb(114, 117, 124);
+    background-color: rgb(88, 91, 99);
+    border: none;
+    color: white;
+}
+
+.numbers:hover{
+    background-color: rgb(78, 78, 78);
+}
+
+#plus-mark:hover {
+    background-color: rgb(78, 78, 78);
 }
 
 #plus-mark {
     width: 20%;
     margin-top: 1%;
-    border-radius: 5px;
-    background-color: rgb(114, 117, 124);
+    border-radius: 7px;
+    background-color: rgb(88, 91, 99);
+    border: none;
+    color: white;
 }
 
 #row-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 3%;
+    gap: 6%;
 }
 
 .rows {
