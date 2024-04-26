@@ -7,13 +7,14 @@
         height: 580px;
         border: 2px solid black;
         border-radius: 10px;
+        background-color: darkgray;
     }
 
     .numbers {
         height: 2.3em;
     }
 
-    #plus-mark {
+    #btn-plus {
         height: 9em;
     }
 
@@ -33,13 +34,14 @@
         height: 580px;
         border: 2px solid black;
         border-radius: 10px;
+        background-color: darkgray;
     }
 
     .numbers {
         height: 2.3em;
     }
 
-    #plus-mark {
+    #btn-plus{
         height: 9em;
     }
 
@@ -59,13 +61,14 @@
         height: 580px;
         border: 2px solid black;
         border-radius: 10px;
+        background-color: darkgray;
     }
 
     .numbers {
         height: 2.3em;
     }
 
-    #plus-mark {
+    #btn-plus {
         height: 9em;
     }
 
@@ -85,13 +88,14 @@
         height: 580px;
         border: 2px solid black;
         border-radius: 10px;
+        background-color: darkgray;
     }
 
     .numbers {
         height: 2.3em;
     }
 
-    #plus-mark {
+    #btn-plus {
         height: 9em;
     }
 
@@ -111,13 +115,14 @@
         height: 630px;
         border: 2px solid black;
         border-radius: 10px;
+        background-color: darkgray;
     }
 
     .numbers {
         height: 2.5em;
     }
 
-    #plus-mark {
+    #btn-plus {
         height: 10em;
     }
 
@@ -157,15 +162,15 @@ body {
     color: white;
 }
 
-.numbers:hover{
+.numbers:hover {
     background-color: rgb(78, 78, 78);
 }
 
-#plus-mark:hover {
+#btn-plus:hover {
     background-color: rgb(78, 78, 78);
 }
 
-#plus-mark {
+#btn-plus {
     width: 20%;
     margin-top: 1%;
     border-radius: 7px;
