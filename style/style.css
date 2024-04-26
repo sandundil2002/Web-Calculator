@@ -10,7 +10,10 @@
         background-color: darkgray;
     }
 
-    .numbers {
+    .numbers,
+    .operaters,
+    .clear,
+    .clear-all {
         height: 2.3em;
     }
 
@@ -37,11 +40,14 @@
         background-color: darkgray;
     }
 
-    .numbers {
+    .numbers,
+    .operaters,
+    .clear,
+    .clear-all {
         height: 2.3em;
     }
 
-    #btn-plus{
+    #btn-plus {
         height: 9em;
     }
 
@@ -64,7 +70,10 @@
         background-color: darkgray;
     }
 
-    .numbers {
+    .numbers,
+    .operaters,
+    .clear,
+    .clear-all {
         height: 2.3em;
     }
 
@@ -91,7 +100,10 @@
         background-color: darkgray;
     }
 
-    .numbers {
+    .numbers,
+    .operaters,
+    .clear,
+    .clear-all {
         height: 2.3em;
     }
 
@@ -118,7 +130,10 @@
         background-color: darkgray;
     }
 
-    .numbers {
+    .numbers,
+    .operaters,
+    .clear,
+    .clear-all {
         height: 2.5em;
     }
 
@@ -149,9 +164,14 @@ body {
     margin: 3% 3%;
     background-color: #e0e7ff;
     border: none;
+    font-size: 100px;
+    text-align: right;
 }
 
-.numbers {
+.numbers,
+.operaters,
+.clear,
+.clear-all {
     width: 20%;
     border-radius: 7px;
     font-family: "Poppins", sans-serif;
@@ -162,7 +182,8 @@ body {
     color: white;
 }
 
-.numbers:hover {
+.numbers:hover,
+.operaters:hover {
     background-color: rgb(78, 78, 78);
 }
 
