@@ -1,7 +1,12 @@
 const display = document.getElementById("display");
+let currentValue = "";
 
 function getValue(num) {
-    display.value = num;
+  currentValue += num;
+  display.value = currentValue;
 }
 
-
+function clean() {
+  currentValue = " "
+  display.value = currentValue;
+}
