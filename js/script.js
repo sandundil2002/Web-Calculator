@@ -10,3 +10,7 @@ function clean() {
   currentValue = " "
   display.value = currentValue;
 }
+
+function calculate() {
+  display.value = eval(currentValue)
+}
