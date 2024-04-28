@@ -12,5 +12,12 @@ function clean() {
 }
 
 function calculate() {
-  display.value = eval(currentValue)
+  try {
+      let total = eval(currentValue);
+      display.value = total;
+      currentValue = total;
+  } catch (error) {
+      display.value = currentValue;
+  }
 }
+
