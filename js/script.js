@@ -22,8 +22,8 @@ function calculate() {
 }
 
 function back() {
-  const n = currentValue.slice(0,currentValue.length-1);
-  display.value = n;
-  currentValue = n;
+  const output = currentValue.slice(0,currentValue.length-1);
+  display.value = output;
+  currentValue = output;
 }
 
