@@ -1,63 +1,109 @@
-body {
-    padding-left: 5%;
-    padding-right: 5%;
-    background-color: cadetblue;
-    background-image: url("/assets/background-table.png");
-    background-repeat: no-repeat;
+body,
+html {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #333;
+}
+
+.background-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.calculator-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: darkgray;
 }
 
 #display {
-    width: 93%;
-    height: 16%;
-    margin: 3% 3%;
-    background-color: #e0e7ff;
-    border: none;
-    font-size: 100px;
+    width: 100%;
+    height: 50px;
     text-align: right;
-}
-
-.numbers,
-.operaters,
-.clear,
-.clear-all {
-    width: 20%;
-    border-radius: 7px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-size: x-large;
-    background-color: rgb(88, 91, 99);
+    padding: 10px;
+    margin-bottom: 10px;
     border: none;
-    color: white;
-}
-
-.numbers:hover,
-.operaters:hover {
-    background-color: rgb(78, 78, 78);
-}
-
-#btn-plus:hover {
-    background-color: rgb(78, 78, 78);
-}
-
-#btn-plus {
-    width: 20%;
-    margin-top: 1%;
-    border-radius: 7px;
-    background-color: rgb(88, 91, 99);
-    border: none;
-    color: white;
+    background-color: #e0e0e0;
+    border-radius: 5px;
 }
 
 #row-container {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 6%;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 100%;
 }
 
 .rows {
-    display: flex;
-    margin-left: 3%;
-    margin-right: 3%;
-    gap: 6.7%;
+    display: contents;
+}
+
+button {
+    width: 100%;
+    height: 60px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.operaters {
+    background-color: rgb(101, 101, 250);
+    color: white;
+}
+
+.operaters:hover{
+    background-color: white;
+    color: rgb(101, 101, 250);
+    font-weight: 600;
+    border: 2px solid rgb(101, 101, 250);
+}
+
+button.numbers {
+    background-color: #4caf50;
+    color: white;
+}
+
+.numbers:hover {
+    background-color: white;
+    color: #4caf50;
+    font-weight: 600;
+    border: 2px solid #4caf50;
+}
+
+button.clear,
+button.clear-all {
+    background-color: #da5b59;
+    color: white;
+}
+
+.clear:hover {
+    background-color: white;
+    color: #da5b59;
+    font-weight: 600;
+    border: 2px solid #da5b59;
+}
+
+.clear-all:hover {
+    background-color: white;
+    color: #da5b59;
+    font-weight: 600;
+    border: 2px solid #da5b59;
+}
+
+button:active {
+    transform: scale(0.9);
 }
